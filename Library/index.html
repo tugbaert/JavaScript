@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header><h1>My Library</h1></header>
+    <button id="new-book-btn">Yeni Kitap Ekle</button>
+    <main id="books-grid"></main>
+    <dialog id="book-dialog">
+        
+        <form id="book-form">
+            <h2>Yeni Kitap Ekle</h2>
+            <label for="title">Kitap Adı:</label>
+            <input type="text" id="title" required>
+            <label for="author">Yazarı:</label>
+            <input type="text" id="author" required>
+            <label for="pages">Sayfa Sayısı:</label>
+            <input type="number" id="pages" required>
+            <label for="isRead">Okundu mu?</label>
+            <input type="checkbox" id="isRead">
+            <div class="form-buttons">
+                <button type="submit" id="submit-btn">Kitabı kaydet</button>
+                <button type="button" id="close-dialog">İptal</button>
+            </div>
+            
+        </form>
+    </dialog>
+    <div class="container">
+        
+        <p id="kitap">kitap</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
